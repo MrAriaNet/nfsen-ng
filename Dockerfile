@@ -1,7 +1,7 @@
 # Base image: PHP 8.3 + Apache
 FROM php:8.3-apache
 
-ENV TZ="Europe/Moscow"
+ENV TZ="UTC"
 WORKDIR /var/www/html
 
 # Install dependencies required for nfdump and NFSen-NG
