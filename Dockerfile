@@ -34,7 +34,7 @@ RUN pecl install rrd \
     && echo "extension=rrd.so" > /usr/local/etc/php/conf.d/rrd.ini
 
 # Setup volumes for persistent data and configuration
-VOLUME ["/data/nfsen", "/config/nfsen"]
+VOLUME ["/data/nfsen-ng", "/config/nfsen-ng"]
 
 # Install NFSen-NG
 RUN git clone https://github.com/mbolli/nfsen-ng.git /var/www/html/nfsen-ng \
